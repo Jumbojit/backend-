@@ -8,9 +8,9 @@ app = Flask(__name__)
 CORS(app)
 
 # Get email credentials from environment variables
-EMAIL_ADDRESS = os.getenv("kariukisamuel866@gmail.com")
-EMAIL_PASSWORD = os.getenv("hyan eala ntxa srye")
-RECEIVER_EMAIL = EMAIL_ADDRESS  # Emails sent to yourself
+EMAIL_ADDRESS = os.getenv("EMAIL_ADDRESS")        # <- environment variable name
+EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")      # <- environment variable name
+RECEIVER_EMAIL = EMAIL_ADDRESS  # emails sent to yourself
 
 @app.route("/")
 def home():
